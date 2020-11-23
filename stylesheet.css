@@ -1,1 +1,125 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: lightgrey;
+  border-radius: 0;
+  border: 3px solid black;
+}
+.navbar-brand {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #212121;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+#nav-list a {
+  color: #212121;
+  background-color: white;
+  text-align: center;
+  border: 1px solid black;
+}
+ul#nav-list{
+  border: 3px solid black;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 3px solid #212121;
+}
+.navbar-header button.navbar-toggle {
+  margin: center;
+  position: relative;
+  top: 5px;
+}
+/* END HEADER */
+
+
+
+/* HOME PAGE */
+h2 {
+  font-family: 'Lora', serif;
+  color: #212121;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+}
+
+#Chicken-tile, #Beef-tile, #Sushi-tile {
+  height: 700px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  background-color: lightgrey;
+  overflow: hidden;
+}
+#Chicken-tile:hover, #Beef-tile:hover, #Sushi-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#Chicken-tile h3, #Beef-tile h3, #Sushi-tile h3 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #212121;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+#Chicken-tile p, #Beef-tile p, #Sushi-tile p{
+  margin-top: 50px;
+  color: #212121;
+  margin-bottom: 0px;
+}
+#Beef-tile p:nth-child(3) {
+  margin: 0; 
+  color: red;
+}
+#Beef-tile p:nth-child(4) {
+  margin: 0; 
+}
+
+/* END HOME PAGE */
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: auto; /* 1vw = 1% of viewport width */
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.5em;
+  }
+  /* End Header */
+
+/********** Super extra small devices Only*************/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: auto;
+  }
+  /* End Header */
+}
+
+
+
 
